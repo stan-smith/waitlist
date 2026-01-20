@@ -132,6 +132,27 @@
             margin: 1rem 0;
         }
 
+        .projects li {
+            margin-bottom: 1rem;
+        }
+
+        .badges {
+            margin-top: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badges img {
+            height: 20px;
+        }
+
+        .badges .trendshift {
+            height: 28px;
+            width: auto;
+        }
+
         .stars {
             color: var(--muted);
         }
@@ -160,9 +181,28 @@
     <h2>// you might know our work ------------------</h2>
     <div class="projects">
         <ul>
-            <li><a href="https://github.com/stan-smith/SlingShot">SlingShot</a> - ultra-low latency video streaming over QUIC</li>
-            <li><a href="https://github.com/stan-smith/Dart">Dart</a> - hardware encoding that keeps network compliance simple</li>
-            <li><a href="https://github.com/stan-smith/FossFLOW">FossFLOW</a> - <span class="stars">16.6k+ stars, #1 on GitHub trending</span></li>
+            <li>
+                <a href="https://github.com/stan-smith/SlingShot">SlingShot</a> - ultra-low latency video streaming over QUIC
+                <div class="badges">
+                    <img src="https://img.shields.io/github/stars/stan-smith/SlingShot?style=flat-square&color=58a6ff&labelColor=0d1117" alt="stars">
+                    <img src="https://img.shields.io/github/license/stan-smith/SlingShot?style=flat-square&color=58a6ff&labelColor=0d1117" alt="license">
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/stan-smith/Dart">Dart</a> - hardware encoding that keeps network compliance simple
+                <div class="badges">
+                    <img src="https://img.shields.io/github/stars/stan-smith/Dart?style=flat-square&color=58a6ff&labelColor=0d1117" alt="stars">
+                    <img src="https://img.shields.io/github/license/stan-smith/Dart?style=flat-square&color=58a6ff&labelColor=0d1117" alt="license">
+                </div>
+            </li>
+            <li>
+                <a href="https://github.com/stan-smith/FossFLOW">FossFLOW</a> - create cracking looking network diagrams
+                <div class="badges">
+                    <img src="https://img.shields.io/github/stars/stan-smith/FossFLOW?style=flat-square&color=58a6ff&labelColor=0d1117" alt="stars">
+                    <img src="https://img.shields.io/github/license/stan-smith/FossFLOW?style=flat-square&color=58a6ff&labelColor=0d1117" alt="license">
+                    <a href="https://trendshift.io/repositories/15118" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15118" alt="Trendshift" class="trendshift"></a>
+                </div>
+            </li>
         </ul>
     </div>
 
