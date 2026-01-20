@@ -1,5 +1,185 @@
-<DOCTYPE! HTML>
-<index>
-	<a>hey</a>
-</index>
-</HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sett - Video streaming that works</title>
+    <style>
+        :root {
+            --bg: #0d1117;
+            --fg: #c9d1d9;
+            --accent: #58a6ff;
+            --muted: #6e7681;
+            --border: #30363d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--fg);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        pre.ascii {
+            color: var(--muted);
+            font-size: 10px;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--fg);
+        }
+
+        h2 {
+            font-size: 1rem;
+            color: var(--muted);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        ul li::before {
+            content: "- ";
+            color: var(--muted);
+        }
+
+        .highlight {
+            color: var(--accent);
+        }
+
+        form {
+            margin-top: 1.5rem;
+        }
+
+        input[type="email"],
+        input[type="text"] {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            color: var(--fg);
+            font-family: inherit;
+            font-size: 1rem;
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        input[type="email"]:focus,
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        input::placeholder {
+            color: var(--muted);
+        }
+
+        button {
+            background: var(--border);
+            border: 1px solid var(--border);
+            color: var(--fg);
+            font-family: inherit;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: var(--bg);
+        }
+
+        .footer {
+            margin-top: 3rem;
+            color: var(--muted);
+            font-size: 0.875rem;
+        }
+
+        .projects {
+            margin: 1rem 0;
+        }
+
+        .stars {
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <pre class="ascii">
+     _______________
+    |  ___________  |
+    | |     _     | |
+    | |    / \    | |    sett
+    | |   /   \   | |    ----
+    | |  /_____\  | |    reliable video streaming
+    | |  |     |  | |    over unreliable networks
+    | |__|     |__| |
+    |_______________|
+    </pre>
+
+    <h1># Sett</h1>
+    <p>Reliable video streaming over unreliable networks.<br>Open source. Commercially supported.</p>
+
+    <h2>// what we do ------------------</h2>
+    <p>We build tools for teams who need video to work when conditions don't cooperate - low bandwidth, unstable connections, remote locations.</p>
+    <p>We've spent years working with the constraints of real-world deployments. We know what breaks, and we've built software to stop it breaking.</p>
+
+    <h2>// you might know our work ------------------</h2>
+    <div class="projects">
+        <ul>
+            <li><a href="https://github.com/stan-smith/SlingShot">SlingShot</a> - ultra-low latency video streaming over QUIC</li>
+            <li><a href="https://github.com/stan-smith/Dart">Dart</a> - hardware encoding that keeps network compliance simple</li>
+            <li><a href="https://github.com/stan-smith/FossFLOW">FossFLOW</a> - <span class="stars">16.6k+ stars, #1 on GitHub trending</span></li>
+        </ul>
+    </div>
+
+    <h2>// what's coming ------------------</h2>
+    <p>Hosted SlingShot, hardware bundles, and proper support for teams who'd rather not run it themselves.</p>
+
+    <h2>// interested? ------------------</h2>
+    <p>Leave your email. We'll let you know when it's ready.<br><span class="stars">No spam, no newsletters, just the launch announcement.</span></p>
+
+    <form action="https://formspree.io/f/xgooznno" method="POST">
+        <input type="email" name="email" placeholder="you@example.com" required>
+        <input type="text" name="usecase" placeholder="org / use case (optional)">
+        <button type="submit">$ submit --keep-me-posted</button>
+    </form>
+
+    <div class="footer">
+        <p>// contact: <a href="mailto:hello@se.tt">hello@se.tt</a> | <a href="https://github.com/stan-smith">github</a></p>
+    </div>
+</body>
+</html>
