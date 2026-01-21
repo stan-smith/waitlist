@@ -25,9 +25,9 @@
             font-family: 'Courier New', Courier, monospace;
             font-size: 16px;
             line-height: 1.6;
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
+            padding: 2rem 2rem 2rem 4rem;
+            max-width: 1000px;
+            margin: 0;
         }
 
         pre.ascii {
@@ -156,6 +156,28 @@
         .stars {
             color: var(--muted);
         }
+
+        .signup {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3rem;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .signup h2 {
+            text-align: center;
+        }
+
+        .signup input {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .signup button {
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
@@ -189,7 +211,7 @@
                 </div>
             </li>
             <li>
-                <a href="https://github.com/stan-smith/Dart">Dart</a> - v4l2 (hdmi to csi, webcam, uvc) to rtsp server, replace EOL hardware encoders with software.
+                <a href="https://github.com/stan-smith/Dart">Dart</a> - v4l2 (hdmi to csi, webcam, uvc) to rtsp server, replace EOL hardware encoders with software
                 <div class="badges">
                     <img src="https://img.shields.io/github/stars/stan-smith/Dart?style=flat-square&color=58a6ff&labelColor=0d1117" alt="stars">
                     <img src="https://img.shields.io/github/license/stan-smith/Dart?style=flat-square&color=58a6ff&labelColor=0d1117" alt="license">
@@ -210,17 +232,19 @@
     <p>Hosted SlingShot, hardware bundles, and proper support for teams who'd rather not run it themselves.</p>
     <p>Specialist hardware, allowing you to get the job done regardless of the requirements.</p>
 
-    <h2>// interested? ------------------</h2>
-    <p>Leave your email. We'll let you know when it's ready.<br><span class="stars">No spam, no newsletters, just the launch announcement.</span></p>
+    <div class="signup">
+        <h2>// interested? ------------------</h2>
+        <p>Leave your email. We'll let you know when it's ready.<br><span class="stars">No spam, no newsletters, just the launch announcement.</span></p>
 
-    <form action="https://formspree.io/f/xgooznno" method="POST">
-        <input type="email" name="email" placeholder="you@example.com" required>
-        <input type="text" name="usecase" placeholder="org / use case (optional)">
-        <button type="submit">$ submit --keep-me-posted</button>
-    </form>
+        <form action="https://formspree.io/f/xgooznno" method="POST">
+            <input type="email" name="email" placeholder="you@example.com" required>
+            <input type="text" name="usecase" placeholder="org / use case (optional)">
+            <button type="submit">$ submit --keep-me-posted</button>
+        </form>
+    </div>
 
     <div class="footer">
-        <p>// contact: <a href="mailto:hello@se.tt">hello@x0z.co</a> | <a href="https://github.com/stan-smith">github</a></p>
+        <p>// contact: <a href="mailto:hello@x0z.co">hello@x0z.co</a> | <a href="https://github.com/stan-smith">github</a></p>
     </div>
 </body>
 </html>
